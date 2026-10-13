@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="gu">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>ScamShield - ગુજરાત સાયબર સુરક્ષા સહાયક</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#eeefff",
+              "surface-container": "#eaedff",
+              "on-primary-fixed": "#00174b",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#d5e4f8",
+              "surface-dim": "#d2d9f4",
+              "on-primary-fixed-variant": "#003ea8",
+              "tertiary-fixed-dim": "#ffb596",
+              "error": "#ba1a1a",
+              "tertiary-fixed": "#ffdbcd",
+              "on-surface-variant": "#434655",
+              "secondary": "#516070",
+              "tertiary": "#943700",
+              "surface-container-low": "#f2f3ff",
+              "outline-variant": "#c3c6d7",
+              "inverse-on-surface": "#eef0ff",
+              "surface": "#faf8ff",
+              "on-tertiary": "#ffffff",
+              "primary": "#004ac6",
+              "surface-tint": "#0053db",
+              "primary-fixed": "#dbe1ff",
+              "surface-container-highest": "#dae2fd",
+              "on-tertiary-container": "#ffede6",
+              "secondary-fixed-dim": "#b9c8db",
+              "tertiary-container": "#bc4800",
+              "on-tertiary-fixed": "#360f00",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#283044",
+              "outline": "#737686",
+              "on-surface": "#131b2e",
+              "on-primary": "#ffffff",
+              "on-secondary-container": "#576676",
+              "on-secondary-fixed": "#0e1d2b",
+              "on-tertiary-fixed-variant": "#7d2d00",
+              "primary-fixed-dim": "#b4c5ff",
+              "on-error-container": "#93000a",
+              "on-error": "#ffffff",
+              "surface-variant": "#dae2fd",
+              "background": "#faf8ff",
+              "inverse-primary": "#b4c5ff",
+              "surface-bright": "#faf8ff",
+              "surface-container-high": "#e2e7ff",
+              "error-container": "#ffdad6",
+              "primary-container": "#2563eb",
+              "secondary-container": "#d5e4f8",
+              "on-background": "#131b2e",
+              "on-secondary-fixed-variant": "#3a4858",
+              "border": "#c3c6d7"
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px"
+            },
+            spacing: {
+              gutter: "1rem",
+              "margin-lg": "2rem",
+              "margin-md": "1.5rem",
+              "space-sm": "0.5rem",
+              "space-xl": "2rem",
+              "space-md": "1rem",
+              margin: "1rem",
+              "gutter-md": "1.5rem",
+              "space-lg": "1.5rem",
+              "space-xs": "0.25rem"
+            },
+            fontFamily: {
+              "body-lg": ["Noto Sans", "Noto Sans Gujarati", "sans-serif"],
+              "headline-sm": ["Inter", "Noto Sans Gujarati", "sans-serif"],
+              "body-lg-medium": ["Noto Sans", "Noto Sans Gujarati", "sans-serif"],
+              "label-md": ["Inter", "Noto Sans Gujarati", "sans-serif"],
+              "headline-lg": ["Inter", "Noto Sans Gujarati", "sans-serif"],
+              "label-sm": ["Inter", "Noto Sans Gujarati", "sans-serif"],
+              "body-md": ["Noto Sans", "Noto Sans Gujarati", "sans-serif"],
+              "label-lg": ["Inter", "Noto Sans Gujarati", "sans-serif"],
+              "body-md-medium": ["Noto Sans", "Noto Sans Gujarati", "sans-serif"],
+              "headline-xl": ["Inter", "Noto Sans Gujarati", "sans-serif"],
+              "headline-md": ["Inter", "Noto Sans Gujarati", "sans-serif"]
+            },
+            fontSize: {
+              "body-lg": ["18px", { lineHeight: "28.8px", fontWeight: "400" }],
+              "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+              "body-lg-medium": ["18px", { lineHeight: "28.8px", fontWeight: "500" }],
+              "label-md": ["16px", { lineHeight: "20px", fontWeight: "500" }],
+              "headline-lg": ["28px", { lineHeight: "36px", fontWeight: "600" }],
+              "label-sm": ["14px", { lineHeight: "18px", fontWeight: "500" }],
+              "body-md": ["16px", { lineHeight: "25.6px", fontWeight: "400" }],
+              "label-lg": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+              "body-md-medium": ["16px", { lineHeight: "25.6px", fontWeight: "500" }],
+              "headline-xl": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+              "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }]
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-background font-body-md text-on-surface antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
